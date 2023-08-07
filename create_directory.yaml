@@ -1,0 +1,7 @@
+- name: create a new directory
+  hosts: <hosts>
+  tasks:
+    - name: Create '/tmp/new_directory'
+      file:
+        path: "/tmp/new_directory"
+        state: directory
